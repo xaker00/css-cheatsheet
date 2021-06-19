@@ -10,14 +10,20 @@ body{
 }
 
 .card{
-
+  border: 3px;
+  border-style: dashed;
+  margin: 10px;
 }
 
 .code-card{
 
 }
 .card-header{
-  
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: -10;
 }
 
 .card-body{
@@ -32,3 +38,16 @@ body{
   
 }
 
+pre:active {
+  user-select: all;
+}
+
+main{
+  display: flex;
+}
+
+@media screen and (max-width:576px) {
+  section {
+      flex-wrap: wrap;
+  }
+}
